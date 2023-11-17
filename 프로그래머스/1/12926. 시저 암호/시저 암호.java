@@ -27,17 +27,6 @@ class Solution {
         
         for(char sissor : split){
             answer += abcd(sissor,n);
-            // if(sissor == ' ') {
-            //     answer += ' ';
-            // } 
-            // else if(sissor + n > 90 && sissor + n < 97){                
-            //     sissor = (char)(64 + n);                
-            //     answer += sissor;
-            // } else if(sissor + n > 122){
-            //     answer += (char)(96 + n);
-            // } else {
-            //     answer += (char)(sissor + n);
-            // }
         }
         return answer;
     }
