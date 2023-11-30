@@ -23,9 +23,6 @@ class Solution {
 //         list.add("");
         
 //         for(int i = 0; i < participant.length; i++) {
-//             System.out.println(participant[i]);
-//             System.out.println(list.get(i));
-//             System.out.println("");
 //             if(participant[i] != list.get(i)) {
 //                 answer = participant[i];
 //                 break;
