@@ -25,9 +25,7 @@ class Solution {
                 map.put(splitReportWho[i], x + 1);
             }
         }
-
-
-
+        
         // 맵에서 뒤에있는 값 가져온게 k 이상이면
         // map2에다가 제보한사람 / 중복이면 +1해서 저장
         HashMap<String, Integer> map2 = new HashMap<String, Integer>();
