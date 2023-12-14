@@ -8,15 +8,15 @@ class Solution {
         String[] splitReportWho = new String[report1.length];
 
         // HashMap 쓰면 될듯
-        // 앞 뒤를 잘라서 각각 저장
-        HashMap<String, Integer> map = new HashMap<String, Integer>();
+        // 앞 뒤를 잘라서 각각 저장        
         for (int i = 0; i < report1.length; i++) {
             String[] split = report1[i].split(" ");
             splitReport[i] = split[0];
             splitReportWho[i] = split[1];
         }
-
+        
         // map에다가 뒤에있는 값 기준으로 없으면 1, 중복값일 때 +1 해서 저장해두기
+        HashMap<String, Integer> map = new HashMap<String, Integer>();        
         for (int i = 0; i < report1.length; i++) {
             if (map.get(splitReportWho[i]) == null) {
                 map.put(splitReportWho[i], 1);
